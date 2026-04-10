@@ -1,6 +1,8 @@
 import Image from "next/image";
 
-export default function CTA() {
+type Props = { onPurchase: () => void };
+
+export default function CTA({ onPurchase }: Props) {
   return (
     <section id="purchase" className="relative py-24 px-6 bg-[#07001a] overflow-hidden">
       {/* 背景バナー画像 */}
@@ -51,12 +53,12 @@ export default function CTA() {
 
         {/* ボタン */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#"
+          <button
+            onClick={onPurchase}
             className="btn-galaxy px-12 py-4 text-white font-black text-lg rounded-full"
           >
             今すぐ購入する →
-          </a>
+          </button>
           <a
             href="#"
             className="px-12 py-4 glass text-purple-200 font-bold text-lg rounded-full hover:bg-white/10 transition-all"

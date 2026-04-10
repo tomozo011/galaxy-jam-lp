@@ -14,7 +14,9 @@ const STARS = Array.from({ length: 80 }, (_, i) => ({
   opacity: 0.3 + (i % 7) * 0.1,
 }));
 
-export default function Hero() {
+type Props = { onPurchase: () => void };
+
+export default function Hero({ onPurchase }: Props) {
   // ローディング演出ステート
   const [phase, setPhase] = useState<"black" | "reveal" | "done">("black");
 
@@ -126,9 +128,9 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a href="#purchase" className="btn-galaxy px-10 py-4 text-white font-black text-lg rounded-full">
+            <button onClick={onPurchase} className="btn-galaxy px-10 py-4 text-white font-black text-lg rounded-full">
               今すぐ購入する →
-            </a>
+            </button>
             <a href="#features" className="px-10 py-4 glass text-purple-200 font-bold text-lg rounded-full hover:bg-white/10 transition-all">
               詳しく見る
             </a>

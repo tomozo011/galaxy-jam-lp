@@ -26,22 +26,24 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section className="relative py-24 px-6 bg-[#04000f]">
+    <section className="relative py-24 px-6 bg-[#07001a]">
       {/* 背景画像（薄く） */}
       <div className="absolute inset-0 overflow-hidden">
         <Image
           src="/images/toast.png"
           alt=""
           fill
-          className="object-cover opacity-10"
+          className="object-cover opacity-8"
         />
-        <div className="absolute inset-0 bg-[#04000f]/80" />
+        <div className="absolute inset-0 bg-[#07001a]/85" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#ff1a8c] rounded-full opacity-10 blur-[130px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#c026d3] rounded-full opacity-10 blur-[130px] pointer-events-none" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto">
         {/* タイトル */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1 glass text-yellow-300 rounded-full text-sm font-bold mb-4 tracking-widest">
+          <span className="inline-block px-4 py-1 glass-pink text-pink-300 rounded-full text-sm font-bold mb-4 tracking-widest">
             ✦ REVIEWS ✦
           </span>
           <h2 className="text-3xl md:text-5xl font-black text-white">
@@ -58,7 +60,7 @@ export default function Reviews() {
               className="glass rounded-3xl p-6 hover:bg-white/10 transition-all duration-200"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center text-2xl shadow-lg">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-600 to-fuchsia-500 flex items-center justify-center text-2xl shadow-lg shadow-pink-900/40">
                   {r.avatar}
                 </div>
                 <div>

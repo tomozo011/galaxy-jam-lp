@@ -56,10 +56,12 @@ export default function Hero({ onPurchase }: Props) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40" />
       </div>
 
-      {/* ネビュラグロー（背景強化） */}
+      {/* ネビュラグロー（ピンク×フクシア×紫） */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-purple-900 rounded-full opacity-30 blur-[150px]" />
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-900 rounded-full opacity-25 blur-[130px]" />
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#ff1a8c] rounded-full opacity-20 blur-[160px]" />
+        <div className="absolute top-1/3 left-1/3 w-[400px] h-[400px] bg-[#c026d3] rounded-full opacity-25 blur-[130px]" />
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#7c3aed] rounded-full opacity-20 blur-[140px]" />
+        <div className="absolute bottom-1/4 left-1/4 w-[300px] h-[300px] bg-[#e879f9] rounded-full opacity-15 blur-[100px]" />
       </div>
 
       {/* 静的な星 */}
@@ -92,13 +94,13 @@ export default function Hero({ onPurchase }: Props) {
       >
         {/* テキスト */}
         <div className="flex-1 text-center md:text-left">
-          <div className="inline-block mb-6 px-5 py-2 glass rounded-full text-purple-300 font-bold text-sm tracking-[0.25em]">
+          <div className="inline-block mb-6 px-5 py-2 glass-pink rounded-full text-pink-300 font-bold text-sm tracking-[0.25em]">
             ✦ NEW ARRIVAL ✦
           </div>
 
           <h1 className="font-black leading-none mb-6">
             {/* グロー用の影レイヤー（aria-hidden で読み上げ対象外） */}
-            <span aria-hidden className="block text-[72px] md:text-[100px] leading-none font-black text-purple-400/40 blur-[6px] select-none absolute" style={{ letterSpacing: "-0.02em" }}>
+            <span aria-hidden className="block text-[72px] md:text-[100px] leading-none font-black text-pink-400/40 blur-[6px] select-none absolute" style={{ letterSpacing: "-0.02em" }}>
               銀河果実
             </span>
             <span
@@ -131,7 +133,7 @@ export default function Hero({ onPurchase }: Props) {
             <button onClick={onPurchase} className="btn-galaxy px-10 py-4 text-white font-black text-lg rounded-full">
               今すぐ購入する →
             </button>
-            <a href="#features" className="px-10 py-4 glass text-purple-200 font-bold text-lg rounded-full hover:bg-white/10 transition-all">
+            <a href="#features" className="px-10 py-4 glass text-pink-200 font-bold text-lg rounded-full hover:bg-white/10 transition-all">
               詳しく見る
             </a>
           </div>
@@ -140,11 +142,11 @@ export default function Hero({ onPurchase }: Props) {
         {/* 商品画像 */}
         <div className="flex-1 flex justify-center items-center">
           <div className="relative">
-            <div className="absolute inset-0 rounded-full border border-purple-500/30 scale-110 animate-[spin_20s_linear_infinite]" />
-            <div className="absolute inset-0 rounded-full border border-pink-500/20 scale-125 animate-[spin_30s_linear_infinite_reverse]" />
-            <div className="absolute inset-0 rounded-full bg-purple-600/20 blur-3xl scale-150 animate-glow-pulse" />
+            <div className="absolute inset-0 rounded-full border border-pink-500/40 scale-110 animate-[spin_20s_linear_infinite]" />
+            <div className="absolute inset-0 rounded-full border border-fuchsia-400/30 scale-125 animate-[spin_30s_linear_infinite_reverse]" />
+            <div className="absolute inset-0 rounded-full bg-pink-600/20 blur-3xl scale-150 animate-glow-pulse" />
 
-            <div className="animate-float relative w-72 h-72 md:w-[420px] md:h-[420px] rounded-full overflow-hidden shadow-[0_0_80px_rgba(168,85,247,0.6)]">
+            <div className="animate-float relative w-72 h-72 md:w-[420px] md:h-[420px] rounded-full overflow-hidden shadow-[0_0_80px_rgba(255,26,140,0.7)]">
               <Image
                 src="/images/jar-closed.png"
                 alt="銀河果実 いちごジャム"
@@ -166,7 +168,7 @@ export default function Hero({ onPurchase }: Props) {
 
       {/* スクロール */}
       <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-purple-400 animate-bounce transition-opacity duration-1000"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-pink-400 animate-bounce transition-opacity duration-1000"
         style={{ opacity: phase === "done" ? 1 : 0 }}
       >
         <span className="text-xs tracking-[0.3em]">SCROLL</span>

@@ -29,17 +29,18 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="relative py-24 px-6 bg-[#07001a]">
+    <section id="features" className="relative py-24 px-6 bg-[#0a0018]">
       {/* 背景グロー */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-1/2 left-0 w-80 h-80 bg-purple-800 rounded-full opacity-20 blur-[100px]" />
-        <div className="absolute top-1/2 right-0 w-80 h-80 bg-blue-800 rounded-full opacity-20 blur-[100px]" />
+        <div className="absolute top-1/2 left-0 w-80 h-80 bg-[#ff1a8c] rounded-full opacity-15 blur-[120px]" />
+        <div className="absolute top-1/2 right-0 w-80 h-80 bg-[#c026d3] rounded-full opacity-20 blur-[110px]" />
+        <div className="absolute bottom-0 left-1/2 w-60 h-60 bg-[#e879f9] rounded-full opacity-10 blur-[90px]" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* タイトル */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1 glass text-purple-300 rounded-full text-sm font-bold mb-4 tracking-widest">
+          <span className="inline-block px-4 py-1 glass-pink text-pink-300 rounded-full text-sm font-bold mb-4 tracking-widest">
             ✦ FEATURES ✦
           </span>
           <h2 className="text-3xl md:text-5xl font-black text-white">

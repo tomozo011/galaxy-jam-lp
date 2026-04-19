@@ -74,7 +74,7 @@ export default function ShootingStars() {
           s.x, s.y
         );
         grad.addColorStop(0, `rgba(255,255,255,0)`);
-        grad.addColorStop(0.6, `rgba(200,180,255,${s.opacity * 0.6})`);
+        grad.addColorStop(0.6, `rgba(255,100,200,${s.opacity * 0.7})`);
         grad.addColorStop(1, `rgba(255,255,255,${s.opacity})`);
 
         ctx.beginPath();
@@ -87,7 +87,7 @@ export default function ShootingStars() {
 
         const glow = ctx.createRadialGradient(s.x, s.y, 0, s.x, s.y, 6);
         glow.addColorStop(0, `rgba(255,255,255,${s.opacity * 0.9})`);
-        glow.addColorStop(1, `rgba(200,150,255,0)`);
+        glow.addColorStop(1, `rgba(255,100,200,0)`);
         ctx.beginPath();
         ctx.arc(s.x, s.y, 6, 0, Math.PI * 2);
         ctx.fillStyle = glow;

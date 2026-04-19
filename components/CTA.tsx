@@ -17,11 +17,12 @@ export default function CTA({ onPurchase }: Props) {
       </div>
 
       {/* グロー */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-800 rounded-full opacity-20 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#ff1a8c] rounded-full opacity-18 blur-[130px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[#c026d3] rounded-full opacity-20 blur-[90px] pointer-events-none" />
 
       <div className="relative z-10 max-w-2xl mx-auto text-center">
         {/* デコ */}
-        <p className="text-purple-400 tracking-[0.3em] text-sm font-bold mb-4">✦ ORDER ✦</p>
+        <p className="text-pink-400 tracking-[0.3em] text-sm font-bold mb-4">✦ ORDER ✦</p>
 
         <h2 className="text-4xl md:text-6xl font-black text-white mb-4 leading-tight">
           今日から{" "}
@@ -39,13 +40,13 @@ export default function CTA({ onPurchase }: Props) {
           <p className="text-gray-500 text-sm mt-1">税込 / 1瓶 230g</p>
 
           <div className="mt-5 flex flex-wrap justify-center gap-2">
-            <span className="px-3 py-1 bg-purple-900/60 text-purple-300 rounded-full text-xs font-bold border border-purple-700">
+            <span className="px-3 py-1 bg-pink-900/60 text-pink-300 rounded-full text-xs font-bold border border-pink-700">
               🚚 送料無料
             </span>
-            <span className="px-3 py-1 bg-yellow-900/60 text-yellow-300 rounded-full text-xs font-bold border border-yellow-700">
+            <span className="px-3 py-1 bg-fuchsia-900/60 text-fuchsia-300 rounded-full text-xs font-bold border border-fuchsia-700">
               🎁 ギフト包装対応
             </span>
-            <span className="px-3 py-1 bg-blue-900/60 text-blue-300 rounded-full text-xs font-bold border border-blue-700">
+            <span className="px-3 py-1 bg-violet-900/60 text-violet-300 rounded-full text-xs font-bold border border-violet-700">
               ✅ 返金保証あり
             </span>
           </div>
@@ -61,7 +62,7 @@ export default function CTA({ onPurchase }: Props) {
           </button>
           <a
             href="#"
-            className="px-12 py-4 glass text-purple-200 font-bold text-lg rounded-full hover:bg-white/10 transition-all"
+            className="px-12 py-4 glass text-pink-200 font-bold text-lg rounded-full hover:bg-white/10 transition-all"
           >
             詳しく見る
           </a>

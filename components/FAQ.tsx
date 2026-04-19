@@ -29,14 +29,15 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="relative py-24 px-6 bg-[#04000f]">
+    <section className="relative py-24 px-6 bg-[#0a0018]">
       {/* グロー */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-purple-900 rounded-full opacity-20 blur-[100px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#ff1a8c] rounded-full opacity-15 blur-[110px] pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#c026d3] rounded-full opacity-12 blur-[90px] pointer-events-none" />
 
       <div className="relative z-10 max-w-3xl mx-auto">
         {/* タイトル */}
         <div className="text-center mb-14">
-          <span className="inline-block px-4 py-1 glass text-purple-300 rounded-full text-sm font-bold mb-4 tracking-widest">
+          <span className="inline-block px-4 py-1 glass-pink text-pink-300 rounded-full text-sm font-bold mb-4 tracking-widest">
             ✦ FAQ ✦
           </span>
           <h2 className="text-3xl md:text-5xl font-black text-white">
@@ -54,18 +55,18 @@ export default function FAQ() {
                 onClick={() => setOpen(open === i ? null : i)}
               >
                 <span className="flex items-center gap-3">
-                  <span className="text-purple-400 font-black">Q.</span>
+                  <span className="text-pink-400 font-black">Q.</span>
                   {faq.q}
                 </span>
                 <span
-                  className={`text-purple-400 text-xl transition-transform duration-200 flex-shrink-0 ${open === i ? "rotate-45" : "rotate-0"}`}
+                  className={`text-pink-400 text-xl transition-transform duration-200 flex-shrink-0 ${open === i ? "rotate-45" : "rotate-0"}`}
                 >
                   ＋
                 </span>
               </button>
               {open === i && (
                 <div className="px-6 pb-5 text-gray-300 text-sm leading-relaxed border-t border-white/10 pt-4">
-                  <span className="text-purple-400 font-black mr-2">A.</span>
+                  <span className="text-pink-400 font-black mr-2">A.</span>
                   {faq.a}
                 </div>
               )}

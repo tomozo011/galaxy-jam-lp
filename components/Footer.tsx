@@ -10,10 +10,10 @@ export default function Footer() {
 
         {/* リンク */}
         <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500 mb-8">
-          <a href="#" className="hover:text-purple-400 transition-colors">特定商取引法に基づく表記</a>
-          <a href="#" className="hover:text-purple-400 transition-colors">プライバシーポリシー</a>
-          <a href="#" className="hover:text-purple-400 transition-colors">お問い合わせ</a>
-          <a href="#" className="hover:text-purple-400 transition-colors">返品・交換について</a>
+          <a href="#" className="hover:text-pink-400 transition-colors">特定商取引法に基づく表記</a>
+          <a href="#" className="hover:text-pink-400 transition-colors">プライバシーポリシー</a>
+          <a href="#" className="hover:text-pink-400 transition-colors">お問い合わせ</a>
+          <a href="#" className="hover:text-pink-400 transition-colors">返品・交換について</a>
         </div>
 
         <div className="border-t border-white/5 pt-6 text-gray-700 text-xs">
